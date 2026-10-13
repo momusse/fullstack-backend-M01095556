@@ -8,4 +8,8 @@ app.get("/", (req, res) => {
   res.send("Server running");
 });
 
+app.get("/api/message", (req, res) => {
+  res.json({ msg: "Hello from backend API" });
+});
+
 app.listen(3000, () => console.log("Server started"));
